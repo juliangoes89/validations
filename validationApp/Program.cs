@@ -47,6 +47,7 @@ namespace validationApp
             //Console.WriteLine(notify3.printErrors());
             Notification notify4 = validateStringWithIfs("abcde");
             //Console.WriteLine(notify4.printErrors());
+            
         }
         public static void excecuteCasesWithRegularExpression(){
             Notification notify1 = validateStringWithRegularExpression("Abcde");
