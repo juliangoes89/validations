@@ -1,0 +1,16 @@
+C:\TallerCsharp\validations\validationApp\bin\Debug\net5.0\validationApp.exe
+C:\TallerCsharp\validations\validationApp\bin\Debug\net5.0\validationApp.deps.json
+C:\TallerCsharp\validations\validationApp\bin\Debug\net5.0\validationApp.runtimeconfig.json
+C:\TallerCsharp\validations\validationApp\bin\Debug\net5.0\validationApp.runtimeconfig.dev.json
+C:\TallerCsharp\validations\validationApp\bin\Debug\net5.0\validationApp.dll
+C:\TallerCsharp\validations\validationApp\bin\Debug\net5.0\ref\validationApp.dll
+C:\TallerCsharp\validations\validationApp\bin\Debug\net5.0\validationApp.pdb
+C:\TallerCsharp\validations\validationApp\obj\Debug\net5.0\validationApp.csproj.AssemblyReference.cache
+C:\TallerCsharp\validations\validationApp\obj\Debug\net5.0\validationApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\TallerCsharp\validations\validationApp\obj\Debug\net5.0\validationApp.AssemblyInfoInputs.cache
+C:\TallerCsharp\validations\validationApp\obj\Debug\net5.0\validationApp.AssemblyInfo.cs
+C:\TallerCsharp\validations\validationApp\obj\Debug\net5.0\validationApp.csproj.CoreCompileInputs.cache
+C:\TallerCsharp\validations\validationApp\obj\Debug\net5.0\validationApp.dll
+C:\TallerCsharp\validations\validationApp\obj\Debug\net5.0\ref\validationApp.dll
+C:\TallerCsharp\validations\validationApp\obj\Debug\net5.0\validationApp.pdb
+C:\TallerCsharp\validations\validationApp\obj\Debug\net5.0\validationApp.genruntimeconfig.cache
