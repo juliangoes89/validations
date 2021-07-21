@@ -45,45 +45,45 @@ namespace validationApp
         }
         public static void excecuteCasesWithIfs(){
             Notification notify1 = validateStringWithIfs("Abcde");
-            //Console.WriteLine(notify1.printErrors());
+            Console.WriteLine(notify1.printErrors());
             Notification notify2 = validateStringWithIfs("Abc");
-            //Console.WriteLine(notify2.printErrors());
+            Console.WriteLine(notify2.printErrors());
             Notification notify3 = validateStringWithIfs("Abcdefghijklmnopqrstuvwxyz1234567890");
-            //Console.WriteLine(notify3.printErrors());
+            Console.WriteLine(notify3.printErrors());
             Notification notify4 = validateStringWithIfs("abcde");
-            //Console.WriteLine(notify4.printErrors());
+            Console.WriteLine(notify4.printErrors());
             
         }
         public static void excecuteCasesWithRegularExpression(){
             Notification notify1 = validateStringWithRegularExpression("Abcde");
-            //Console.WriteLine(notify1.printErrors());
+            Console.WriteLine(notify1.printErrors());
             Notification notify2 = validateStringWithRegularExpression("Abc");
-            //Console.WriteLine(notify2.printErrors());
+            Console.WriteLine(notify2.printErrors());
             Notification notify3 = validateStringWithRegularExpression("Abcdefghijklmnopqrstuvwxyz1234567890");
-            //Console.WriteLine(notify3.printErrors());
+            Console.WriteLine(notify3.printErrors());
             Notification notify4 = validateStringWithRegularExpression("abcde");
-            //Console.WriteLine(notify4.printErrors());
+            Console.WriteLine(notify4.printErrors());
         }
         public static void excecuteCasesWithExceptions(){
             try {
                 validateStringWithExceptions("Abcde");
             }catch(Exception e){
-                //Console.WriteLine(e.Message);
+                Console.WriteLine(e.Message);
             }
             try {
                 validateStringWithExceptions("Abc");
             }catch(Exception e){
-                //Console.WriteLine(e.Message);
+                Console.WriteLine(e.Message);
             }
             try {
                 validateStringWithExceptions("Abcdefghijklmnopqrstuvwxyz1234567890");
             }catch(Exception e){
-                //Console.WriteLine(e.Message);
+                Console.WriteLine(e.Message);
             }
             try {
                 validateStringWithExceptions("abcde");
             }catch(Exception e){
-                //Console.WriteLine(e.Message);
+                Console.WriteLine(e.Message);
             }
         }
         public static Notification validateStringWithIfs(string input){
