@@ -88,29 +88,47 @@ namespace validationApp
         }
         public static Notification validateStringWithIfs(string input){
             Notification notification = new Notification();
-            if(input.Length < 5 || input.Length > 32  ){
-                notification.addError("La longitud del texto debe estar entre 5 y 32");
-            }
-            Boolean found = searchFirstMayAlphabeth(input);
-            if(!found){
-                notification.addError("La palabra debe empezar por alguna de estas letras en mayusula A-Z");
+            Boolean isEmpty = validateNullOrEmpty(input, notification);
+            if(!isEmpty){
+                if(input.Length < 5 || input.Length > 32  ){
+                    notification.addError("La longitud del texto debe estar entre 5 y 32");
+                }
+                Boolean found = searchFirstMayAlphabeth(input);
+                if(!found){
+                    notification.addError("La palabra debe empezar por alguna de estas letras en mayusula A-Z");
+                }
             }
             return notification;
         }
         public static Notification validateStringWithRegularExpression(string input){
             Notification notification = new Notification();
-            var regex = @"^[A-Z].{4,32}$";
-            var match = Regex.Match(input, regex, RegexOptions.None);
-            if (!match.Success)
-            {
-                 notification.addError("La longitud del texto debe estar entre 5 y 32 y debe empezar con una letra Mayúscula");
+            Boolean isEmpty = validateNullOrEmpty(input, notification);
+            if(!isEmpty){
+                var regex = @"^[A-Z].{4,32}$";
+                var match = Regex.Match(input, regex, RegexOptions.None);
+                if (!match.Success)
+                {
+                    notification.addError("La longitud del texto debe estar entre 5 y 32 y debe empezar con una letra Mayúscula");
+                }
             }
             return notification;
         }
         public static void validateStringWithExceptions(string input){
-            if (input.Length < 5 || input.Length > 32) throw new Exception("La longitud del texto debe estar entre 5 y 32");
-            if (!searchFirstMayAlphabeth(input)) throw new Exception("La palabra debe empezar por alguna de estas letras en mayusula A-Z");
+            Boolean isEmpty = String.IsNullOrEmpty(input);
+            if(!isEmpty){
+                if (input.Length < 5 || input.Length > 32) throw new Exception("La longitud del texto debe estar entre 5 y 32");
+                if (!searchFirstMayAlphabeth(input)) throw new Exception("La palabra debe empezar por alguna de estas letras en mayusula A-Z");
+            }
         }
+        private static Boolean validateNullOrEmpty(string input, Notification notification){
+            if(String.IsNullOrEmpty(input)){
+                notification.addError("La cadena era vacía");
+                return true;
+            }else{
+                return false;
+            }       
+        }
+
         private static Boolean searchFirstMayAlphabeth(string input){
             Char[] alphabet = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
             Boolean found = false;
