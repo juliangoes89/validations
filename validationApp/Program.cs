@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text.RegularExpressions;
 
 namespace validationApp
@@ -12,6 +13,9 @@ namespace validationApp
             excecuteMillionTimes();
         }
         public static void excecuteMillionTimes(){
+            var proc = Process.GetCurrentProcess();
+            var mem = proc.WorkingSet64;
+            var cpu = proc.TotalProcessorTime;
             var watch = System.Diagnostics.Stopwatch.StartNew();
             for (int i = 0; i < 1000000; i++)
             {
@@ -19,6 +23,7 @@ namespace validationApp
             }
             watch.Stop();
             Console.WriteLine($"Con los Ifs: {watch.ElapsedMilliseconds} ms");
+            Console.WriteLine("My process used working set {0:n3} K of working set and CPU {1:n} msec", mem / 1024.0, cpu.TotalMilliseconds);
             if (!watch.IsRunning)
             watch.Restart();
             for (int i = 0; i < 1000000; i++)
@@ -27,7 +32,7 @@ namespace validationApp
             }
             watch.Stop();
             Console.WriteLine($"Con las expresiones regulares: {watch.ElapsedMilliseconds} ms");
-
+            Console.WriteLine("My process used working set {0:n3} K of working set and CPU {1:n} msec", mem / 1024.0, cpu.TotalMilliseconds);
             if (!watch.IsRunning)
             watch.Restart();
             for (int i = 0; i < 1000000; i++)
@@ -36,7 +41,7 @@ namespace validationApp
             }
             watch.Stop();
             Console.WriteLine($"Con las excepciones : {watch.ElapsedMilliseconds} ms");
-
+            Console.WriteLine("My process used working set {0:n3} K of working set and CPU {1:n} msec", mem / 1024.0, cpu.TotalMilliseconds);
         }
         public static void excecuteCasesWithIfs(){
             Notification notify1 = validateStringWithIfs("Abcde");
