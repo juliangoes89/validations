@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\TallerCsharp\\validations\\validationApp\\validationApp.csproj": {}
+    "c:\\TallerCsharp\\validations\\validationApp\\validationApp.csproj": {}
   },
   "projects": {
-    "C:\\TallerCsharp\\validations\\validationApp\\validationApp.csproj": {
+    "c:\\TallerCsharp\\validations\\validationApp\\validationApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\TallerCsharp\\validations\\validationApp\\validationApp.csproj",
+        "projectUniqueName": "c:\\TallerCsharp\\validations\\validationApp\\validationApp.csproj",
         "projectName": "validationApp",
-        "projectPath": "C:\\TallerCsharp\\validations\\validationApp\\validationApp.csproj",
+        "projectPath": "c:\\TallerCsharp\\validations\\validationApp\\validationApp.csproj",
         "packagesPath": "C:\\Users\\julia\\.nuget\\packages\\",
-        "outputPath": "C:\\TallerCsharp\\validations\\validationApp\\obj\\",
+        "outputPath": "c:\\TallerCsharp\\validations\\validationApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
