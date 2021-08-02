@@ -1,1 +1,0 @@
-C:\TallerCsharp\validations\validationApp\.sonarqube\out\0
