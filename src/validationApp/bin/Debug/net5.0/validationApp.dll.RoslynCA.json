@@ -185,6 +185,48 @@
           }
         },
         {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/TallerCsharp/validations/src/validationApp/Program.cs",
+                "region": {
+                  "startLine": 119,
+                  "startColumn": 66,
+                  "endLine": 119,
+                  "endColumn": 128
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/TallerCsharp/validations/src/validationApp/Program.cs",
+                "region": {
+                  "startLine": 120,
+                  "startColumn": 60,
+                  "endLine": 120,
+                  "endColumn": 143
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S2681",
           "level": "warning",
           "message": "This line will not be executed conditionally; only the first line of this 2-line block will be. The rest will execute unconditionally.",
@@ -244,48 +286,6 @@
                   "startColumn": 13,
                   "endLine": 37,
                   "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/TallerCsharp/validations/src/validationApp/Program.cs",
-                "region": {
-                  "startLine": 119,
-                  "startColumn": 66,
-                  "endLine": 119,
-                  "endColumn": 128
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/TallerCsharp/validations/src/validationApp/Program.cs",
-                "region": {
-                  "startLine": 120,
-                  "startColumn": 60,
-                  "endLine": 120,
-                  "endColumn": 143
                 }
               }
             }

@@ -3,15 +3,15 @@
   <ProjectName>validationAppTests</ProjectName>
   <ProjectLanguage>C#</ProjectLanguage>
   <ProjectType>Test</ProjectType>
-  <ProjectGuid>765dfa42-c537-4b05-aca8-74985918cdea</ProjectGuid>
+  <ProjectGuid>cfb237fc-12f4-42ff-a17f-103efffa3747</ProjectGuid>
   <FullPath>C:\TallerCsharp\validations\tests\validationAppTests\validationAppTests.csproj</FullPath>
   <IsExcluded>false</IsExcluded>
   <AnalysisResults>
-    <AnalysisResult Id="FilesToAnalyze" Location="C:\TallerCsharp\validations\.sonarqube\conf\1\FilesToAnalyze.txt" />
+    <AnalysisResult Id="FilesToAnalyze" Location="C:\TallerCsharp\validations\.sonarqube\conf\3\FilesToAnalyze.txt" />
   </AnalysisResults>
   <AnalysisSettings>
     <Property Name="sonar.cs.roslyn.reportFilePaths">C:\TallerCsharp\validations\tests\validationAppTests\bin\Debug\net5.0\validationAppTests.dll.RoslynCA.json|C:\TallerCsharp\validations\tests\validationAppTests\bin\Debug\net5.0\validationAppTests.dll.RoslynCA.json</Property>
-    <Property Name="sonar.cs.analyzer.projectOutPaths">C:\TallerCsharp\validations\.sonarqube\out\1</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">C:\TallerCsharp\validations\.sonarqube\out\3</Property>
   </AnalysisSettings>
   <Configuration>Debug</Configuration>
   <Platform>AnyCPU</Platform>

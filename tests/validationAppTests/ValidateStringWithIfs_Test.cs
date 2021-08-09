@@ -59,6 +59,7 @@ namespace validationAppTests
             Assert.Equal("La palabra debe empezar por alguna de estas letras en mayusula A-Z",notification.printErrors());
             Assert.True(notification.hasErrors(), "No Debería ser válido, empieza con minuscula");
         }
+        
         [Theory]
         [InlineData(null)]
         [InlineData("")]

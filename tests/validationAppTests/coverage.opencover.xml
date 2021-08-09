@@ -2,9 +2,9 @@
 <CoverageSession>
   <Summary numSequencePoints="141" visitedSequencePoints="45" numBranchPoints="38" visitedBranchPoints="16" sequenceCoverage="31.91" branchCoverage="42.1" maxCyclomaticComplexity="45" minCyclomaticComplexity="45" visitedClasses="2" numClasses="2" visitedMethods="7" numMethods="14" />
   <Modules>
-    <Module hash="F46EE455-DFFF-4E4A-8AC8-7C3CB8C5FE5F">
+    <Module hash="E2610C8C-97A6-480B-AA39-87B7F8568F0F">
       <ModulePath>validationApp.dll</ModulePath>
-      <ModuleTime>2021-08-02T07:32:57</ModuleTime>
+      <ModuleTime>2021-08-02T10:43:25</ModuleTime>
       <ModuleName>validationApp</ModuleName>
       <Files>
         <File uid="1" fullPath="C:\TallerCsharp\validations\src\validationApp\Notification.cs" />
